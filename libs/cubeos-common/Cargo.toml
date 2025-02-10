@@ -1,0 +1,14 @@
+[package]
+name = "cubeos-common"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+# thiserror 替代 failure 作为错误处理库可能会更好
+thiserror = "2.0.11"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+
+
+[lib]
+name = "cubeos_common"

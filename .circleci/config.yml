@@ -1,0 +1,21 @@
+version: 2.1
+
+jobs:
+  build_and_test:
+    docker:
+      - image: rust:latest
+    steps:
+      - checkout
+      - run:
+          name: "Cargo build"
+          command: |
+            cargo build --all --verbose
+      - run:
+          name: "Cargo test"
+          command: |
+            cargo test --all --verbose
+
+workflows:
+  build_and_test_workflow:
+    jobs:
+      - build_and_test

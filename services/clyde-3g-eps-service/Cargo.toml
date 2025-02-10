@@ -1,0 +1,14 @@
+[package]
+name = "clyde-3g-eps-service"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+thiserror = "2.0.11"          
+cubeos-common = { path = "../../libs/cubeos-common" }
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[lib]
+name = "clyde_3g_eps_service"

@@ -1,0 +1,6 @@
+[workspace]
+# 用确切路径，而不是 "libs/*" 或 "services/*"
+members = [
+  "libs/cubeos-common",
+  "services/clyde-3g-eps-service"
+]
